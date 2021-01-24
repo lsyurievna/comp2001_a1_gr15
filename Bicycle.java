@@ -18,6 +18,7 @@ public class Bicycle
     private int chainringNumber;
     private boolean hydraulicBrakes;
     private int mileage;
+    private int drive;
     
     /**
      * Set the owner and model fields when this object
@@ -31,6 +32,7 @@ public class Bicycle
         chainringNumber = 0;
         hydraulicBrakes = false;
         mileage = 0;
+     
     }
 
     /**
@@ -108,7 +110,7 @@ public class Bicycle
         return hydraulicBrakes;
     }
      
-    public void setdrive(int mileage)
+    public void setdrive(int drive)
     {
         mileage=mileage + drive;
      }
