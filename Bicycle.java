@@ -4,7 +4,7 @@
  * as a bicycle shop, for instance.
  *
  * @author Liudmila Strelnikova
- * @author (Insert name of group member 2)
+ * @author Kailwsh Sugumar
  * @author (Insert name of group member 3)
  * 
  * @version 19.01.2021
@@ -16,17 +16,21 @@ public class Bicycle
     private String model;
     private int sprocketNumber;
     private int chainringNumber;
-
+    private boolean hydraulicBrakes;
+    private int mileage;
+    
     /**
      * Set the owner and model fields when this object
      * is constructed.
      */
-    public Bicycle(String bikeOwner, String bikeModel)
+    public Bicycle(String bikeOwner, String bikeModel, boolean immutable)
     {
         owner = bikeOwner;
         model = bikeModel;
         sprocketNumber = 0;
         chainringNumber = 0;
+        hydraulicBrakes = false;
+        milage = 0;
     }
 
     /**
@@ -96,4 +100,29 @@ public class Bicycle
         }
         
     }
+    /**
+     *Accessor method to return the value
+     */
+    public boolean ishydraulicBrakes()
+    {
+        return hydraulicBrakes;
+    }
+     
+    public void setdrive(int mileage)
+    {
+        milage=milage + drive;
+     }
+            
+    /**
+     * Gets the bike's milage.
+     * @return String milage of the bike 
+     */
+    public int getMilage()
+    {
+        return mileage;
+    }    
+   
+    
+    
+        
 }
