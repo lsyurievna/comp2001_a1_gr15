@@ -30,7 +30,7 @@ public class Bicycle
         sprocketNumber = 0;
         chainringNumber = 0;
         hydraulicBrakes = false;
-        milage = 0;
+        mileage = 0;
     }
 
     /**
@@ -110,14 +110,14 @@ public class Bicycle
      
     public void setdrive(int mileage)
     {
-        milage=milage + drive;
+        mileage=mileage + drive;
      }
             
     /**
      * Gets the bike's milage.
      * @return String milage of the bike 
      */
-    public int getMilage()
+    public int getMileage()
     {
         return mileage;
     }    
