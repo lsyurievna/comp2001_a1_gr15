@@ -8,5 +8,5 @@ PROJECT TITLE: Bicycle.
 PURPOSE OF PROJECT: Set and get properties of a bike.
 VERSION or DATE: 25.01.2021
 HOW TO START THIS PROJECT:Open the java file, make an object of class Bicycle, and play around with different methods. 
-AUTHORS: Liudmila Strelnikova (repository creator).
-USER INSTRUCTIONS: try setting and getting the bike's owner, model, number of sprockets, chainrings, presence of hydraulic brakes,and mileage. Enjoy.
+AUTHORS: Liudmila Strelnikova (repository creator), Kailesh Sugumar.
+USER INSTRUCTIONS: Try setting and getting the bike's owner, model, number of sprockets, chainrings, presence of hydraulic brakes,and mileage. Enjoy.
