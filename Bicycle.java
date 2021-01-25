@@ -7,7 +7,7 @@
  * @author Kailwsh Sugumar
  * @author (Insert name of group member 3)
  * 
- * @version 19.01.2021
+ * @version 25.01.2021
  */
 public class Bicycle
 {
@@ -16,21 +16,21 @@ public class Bicycle
     private String model;
     private int sprocketNumber;
     private int chainringNumber;
-    private boolean hydraulicBrakes;
     private int mileage;
-    
+    private boolean hydraulicBrakes;
+
     /**
      * Set the owner and model fields when this object
      * is constructed.
      */
-    public Bicycle(String bikeOwner, String bikeModel, boolean immutable)
+    public Bicycle(String bikeOwner, String bikeModel, boolean hydraulicBrakesPresent)
     {
         owner = bikeOwner;
         model = bikeModel;
         sprocketNumber = 0;
         chainringNumber = 0;
-        hydraulicBrakes = false;
-        milage = 0;
+        mileage = 0;
+        hydraulicBrakes = hydraulicBrakesPresent;
     }
 
     /**
@@ -70,6 +70,24 @@ public class Bicycle
     }
     
     /**
+     * Gets presence of hydraulic brakes in the bike.
+     * @return hydraulicBrakes presence of hydraulic brakes in the bike
+     */
+    public boolean getHydraulicBrakesPresence()
+    {
+        return  hydraulicBrakes;
+    }
+    
+    /**
+     * Gets the bike's mileage.
+     * @return the bike's mileage
+     */
+    public int getMileage()
+    {
+        return  mileage;
+    }
+    
+    /**
      * Sets the number of chainrings for the bike.
      * @param bikeChainringNumber number of chainrings in the bike 
      */
@@ -100,29 +118,45 @@ public class Bicycle
         }
         
     }
+    
     /**
-     *Accessor method to return the value
+     * Inceases the mileage of the bike by a specified number of miles.
+     * @param milesDriven how much miles was driven on the bike
      */
-    public boolean ishydraulicBrakes()
+    public void drive(int milesDriven)
     {
-        return hydraulicBrakes;
+        if (milesDriven >= 0)
+        {
+            mileage += milesDriven;
+        }
+        else
+        {
+            System.out.println("Enter a positive integer.");
+        }
     }
-     
-    public void setdrive(int mileage)
-    {
-        milage=milage + drive;
-     }
-            
+    
     /**
-     * Gets the bike's milage.
-     * @return String milage of the bike 
+     * Prints all available information about the bike: owner, model,
+     * number of sprockets, chainrings, presence of hydraulic brakes,
+     * and mileage. Each characteristic is printed on a separate line.
      */
-    public int getMilage()
+    public void printBikeInfo()
     {
-        return mileage;
-    }    
-   
+        System.out.println("Owner:" + owner);
+        System.out.println("Model:" + model);
+        System.out.println("Number of sprockets:" + sprocketNumber);
+        System.out.println("Number of chainrings:" + chainringNumber);
+        System.out.println("Hydraulic brakes present" + hydraulicBrakes);
+        System.out.println("Mileage:" + mileage);
+    }
     
-    
-        
+    /**
+     * Prints information about the author of each implemented method.
+     */
+    public void authorInfo()
+    {
+        System.out.println("Mila did tasks 1,2,3,7,8 and fixed mistakes in tasks 4,5,6");
+        System.out.println("Kailesh did tasks 4,5,6");
+        System.out.println("Tousif might have dropped the course, didn't tell us");
+    }
 }
