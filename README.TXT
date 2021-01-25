@@ -10,7 +10,7 @@ VERSION or DATE: 25.01.2021
 HOW TO START THIS PROJECT:Open the java file, make an object of class Bicycle, and play around with different methods. 
 AUTHORS: Liudmila Strelnikova (repository creator), Kailesh Sugumar.
 USER INSTRUCTIONS: Try setting and getting the bike's owner, model, number of sprockets, chainrings, presence of hydraulic brakes,and mileage. Enjoy.
-POINT DISTRIBUTION: 
+POINT DISTRIBUTION: Mila:15, Kailesh:5 (out of 20).
 -----
 Mila
 -----
